@@ -7,7 +7,6 @@ import sys
 
 import boto3
 import rsa
-import win32crypt
 
 
 def main(argv):
@@ -114,6 +113,7 @@ def rsa_decrypt(ciphertext, keyfile):
 
 
 def crypt32_protect(plaintext):
+    import win32crypt
     pwdHash = win32crypt.CryptProtectData(unicode(plaintext),u'psw',None,None,None,0x1)
     return binascii.hexlify(pwdHash)
 
