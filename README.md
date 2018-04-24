@@ -33,10 +33,10 @@ usage: connect.py [-h] [--region REGION] [--keyfile KEYFILE]
 If you need to use MFA, there are helper scripts for sh environments (git-bash, mingw, cygwin(untested), etc)
 
 ```
-./auth.sh <Timed One-time password>
+source auth.sh <Timed One-time password>
 ```
 Example
-`./auth.sh 012345`
+`source auth.sh 012345`
 
 This only works for virtual MFAs, but if you have a hardware MFA, it shouldn't be too difficult to modify auth.py with
  your devices ID
