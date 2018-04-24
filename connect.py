@@ -90,7 +90,7 @@ def make_ec2_conn(args):
     if args.profile:
         boto3.setup_default_session(profile_name=args.profile)
     if args.region:
-        ec2 = boto3.client('ec', region_name=args.region)
+        ec2 = boto3.client('ec2', region_name=args.region)
     else:
         ec2 = boto3.client('ec2')
     return ec2
