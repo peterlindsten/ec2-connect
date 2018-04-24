@@ -30,7 +30,8 @@ usage: connect.py [-h] [--region REGION] [--keyfile KEYFILE]
      --no-rdp, -n          Don't launch Remote Desktop
 ```
 
-If you need to use MFA, there are helper scripts for sh environments (git-bash, mingw, cygwin(untested), etc)
+If you need to use MFA, there are helper scripts for sh environments (git-bash, mingw, cygwin(untested), etc)  
+**Note:** This overwrites the standard AWS env vars, so it will not work if your current credentials are stored there
 
 ```
 source auth.sh <Timed One-time password>
