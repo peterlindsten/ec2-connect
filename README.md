@@ -3,7 +3,7 @@
 Utility to connect to windows instances on ec2
 
 ## Installation
-clone repo
+clone repo  
 python -m pip install -r requirements.txt
 
 ## Usage
